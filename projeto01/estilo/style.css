@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
 :root {
     --cor0: #BCBF60;
     --cor1: #A6A5A1;
     --cor2: #D9D8D7;
     --cor3: #404040;
     --cor4: #0D0D0D;
+
+    --fonte1: "Bebas Neue", serif;
+    --fonte2: "Geist Mono", monospace;
 }
 
 * {
@@ -28,6 +37,8 @@ header {
 header > h1 {
     padding: 50px 0px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3vw;
 }
 
 a {
@@ -45,10 +56,18 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 1.5em;
+    font-size: 1.8vw;
+    font-family: var(--fonte1);
+}
+
+section > h2 {
+    font-family: var(--fonte1);
+    padding: 5px 0px;
 }
 
 section.sec {
     background-color: var(--cor2);
+    padding-right: 100px;
 }
 
 section.img {
@@ -56,8 +75,13 @@ section.img {
 }
 
 section.img > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: var(--cor3);
+}
+
+.img > ul > li {
+   padding: 5px;
 }
 
 
